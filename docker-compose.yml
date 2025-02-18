@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  app:
+    image: todo-lamp # Using your pre-built image
+    container_name: todo-app
+    ports:
+      - "8000:80"
+    env_file:
+      - .env
+    volumes:
+      - .:/var/www/html/todo-app
