@@ -2,3 +2,5 @@
 .dockerignore
 .git/
 vendor/
+table.sql
+docker-compose.yml
