@@ -39,7 +39,7 @@ jobs:
 
       - name: Build and Push to Docker Hub
         env:
-          DOCKER_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
+          DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         run: |
           IMAGE_NAME=todolamp
           docker build -t $DOCKER_USERNAME/$IMAGE_NAME:latest .
